@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kattgalleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Kattgalleriet</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Kattbilder</h2>
+            <img src="pixel-cat1.jpeg" alt="Perserkatt">
+            <img src="pixel-cat2.png" alt="Bengalkatt">
+            <img src="pixel-cat3.png" alt="Sphynx">  
+        </section>
+    </main>
+</body>
+</html>

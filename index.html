@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KattPixel Community </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>😸 KattPixel Community 😸</h1>
+        <p>information om alla kattraser chatta med andra kattälskare!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gallery">kattraser</a></li>
+            <li><a href="#chat">chatta</a></li>
+        </ul>
+    </nav>
+    <main>
+         <bilder src="bilder/pixelkatt"></bilder>
+        <section id="gallery">
+            <div class="gallery">
+                <img src="bilder/pixel-cat1.jpeg" alt="Perserkatt" data-info="">
+                <img src="bilder/pixel-cat2.png" alt="Bengalkatt" data-info="">
+                <img src="bilder/pixel-cat3.png" alt="Sphynx" data-info="">
+            </div>
+            <div id="cat-info"></div>
+        </section>
+       
+        <section id="chat">
+            <div class="chat-box">
+                <div id="messages"></div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Skriv ett meddelande..." required>
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
