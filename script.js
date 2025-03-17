@@ -25,4 +25,20 @@ document.addEventListener('DOMContentLoaded', () => {
             catInfo.style.display = 'block';
         }
     });
+
+    function searchCats() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let images = document.querySelectorAll('.gallery img');
+
+        images.forEach(img => {
+            let breed = img.alt.toLowerCase(); // Get the breed name from alt attribute
+            if (breed.includes(input)) {
+                img.style.display = "block"; // Show matching images
+            } else {
+                img.style.display = "none"; // Hide non-matching images
+            }
+        });
+    }
+
+    document.getElementById('searchBar').addEventListener('input', searchCats);
 });
