@@ -5,37 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> KattPixel Community </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bilder/kattipixlar.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>😸 KattPixel Community 😸</h1>
+        <h2>😸 KattPixel Community 😸</h2>
         <p>
-            information om alla kattraser chatta med andra kattälskare!
+            Ai generated cats for everyone! 🐱
         </p>
+        <p> click on a cat image to show information about the cat race </p>
+        
     </header>
     <nav>
         <ul>
-            <li><a href="#gallery">kattraser</a></li>
-            <li><a href="#chat">chatta</a></li>
+            <li><a href="#gallery">cat races</a></li>
+            <li><a href="#chat">chat</a></li>
         </ul>
     </nav>
     <main>
-         <bilder src="bilder/pixelkatt"></bilder>
+        <input type="text" id="searchBar" placeholder="search..." onkeyup="searchCats()">
+        <bilder src="bilder/pixelkatt"></bilder>
         <section id="gallery">
             <div class="gallery">
-                <img src="bilder/pixel-cat1.jpeg" alt="Perserkatt" data-info="">
-                <img src="bilder/pixel-cat2.png" alt="Bengalkatt" data-info="">
-                <img src="bilder/pixel-cat3.png" alt="Sphynx" data-info="">
+                <img src="bilder/Abessinier katt.png" alt="Abyssinier" data-info="" title="Abessinier">
+                <img src="bilder/Designer - kopia.jpeg" alt="American bobtail" data-info="" title="American bobtail">
+                <img src="bilder/Designer (1).jpeg" alt="American curl" data-info="" title="American curl">
+                <img src="bilder/americanshorthair.jpeg" alt="American shorthair" data-info="" title="American shorthair">
+                <img src="bilder/american wirehair.jpeg" alt="American wirehair" data-info="" title="American wirehair">
+                <img src="bilder/arabian mau.jpeg" alt="Arabian mau" data-info="" title="Arabian mau">
+                <img src="" alt="Austrualian mist" data-info="" title="Austrualian mist">
+                <img src="" alt="American ringtail" data-info="" title="American ringtail">
+                <img src="" alt="Balines" data-info="" title="Balines">
+                <img src="" alt="Bambino" data-info="" title="Bambino">
+                <img src="bilder/pixel-cat2.png" alt="Bengal" data-info="" title="Bengal">
+                <img src="" alt="Birman" data-info="" title="Birman">
+                <img src="" alt="Bombay" data-info="" title="Bombay">
+                <img src="" alt="Brazilian shorthair" data-info="" title="Brazilian shorthair">
+                <img src="" alt="Britisk korthair" data-info="" title="Britisk korthair">
+                <img src="" alt="Britisk långhair" data-info="" title="Britisk långhair">
+                <img src="" alt="Burmese" data-info="" title="Burmese">
+                <img src="" alt="Burmila" data-info="" title="Burmila">
+                <img src="" alt="California spangled" data-info="" title="California spangled">
+                <img src="" alt="Chantilly-Tiffany" data-info="" title="Chantilly-Tiffany">
+                <img src="" alt="Chartreux" data-info="" title="Chartreux">
+                <img src="" alt="Chausie" data-info="" title="Chausie">
+                <img src="" alt="Cornish Rex" data-info="" title="Cornish Rex">
+                <img src="" alt="Cymric" data-info="" title="Cymric">
+                <img src="" alt="Devon Rex" data-info="" title="Devon Rex">
+                <img src="" alt="Donskoy" data-info="" title="Donskoy">
+                <img src="" alt="Egyptisk mau" data-info="" title="Egyptisk mau">
+                <img src="" alt="european shorthair" data-info="" title="european shorthair">
+                <img src="" alt="exotic shorthair" data-info="" title="exotic shorthair">
+                <img src="" alt="Havana brown" data-info="" title="Havana brown">
+                <img src="" alt="highlander" data-info="" title="highlander">
+                <img src="" alt="himalayan" data-info="" title="himalayan">
+                <img src="" alt="japanese bobtail" data-info="" title="japanese bobtail">
+                <img src="" alt="javanes" data-info="" title="javanes">
+                <img src="" alt="khao manee" data-info="" title="khao manee">
+                <img src="" alt="korat" data-info="" title="korat">
+                <img src="" alt="kurilian bobtail" data-info="" title="kurilian bobtail">
+                <img src="" alt="laperm" data-info="" title="laperm">
+                <img src="" alt="lykoi" data-info="" title="lykoi">
+                <img src="" alt="maine coon" data-info="" title="maine coon">
+                <img src="" alt="manx" data-info="" title="manx">
+                <img src="" alt="mekong bobtail" data-info="" title="mekong bobtail">
+                <img src="" alt="minskin" data-info="" title="minskin">
+                <img src="" alt="munchkin" data-info="" title="munchkin">
+                <img src="" alt="nebelung" data-info="" title="nebelung">
+                <img src="" alt="norsk skogkatt" data-info="" title="norsk skogkatt">
+                <img src="" alt="ocicat" data-info="" title="ocicat">
+                <img src="" alt="ojos azules" data-info="" title="ojos azules">
+                <img src="" alt="orientalisk korthår" data-info="" title="orientalisk korthair">
+                <img src="" alt="orientalisk långhair" data-info="" title="orientalisk långhair">
+                <img src="bilder/pixel-cat1.jpeg" alt="persian" data-info="" title="persian">
+                <img src="" alt="peterbald" data-info="" title="peterbald">
+                <img src="" alt="pixie-bob" data-info="" title="pixie-bob">
+                <img src="" alt="ragdoll" data-info="" title="ragdoll">
+                <img src="" alt="russian blue" data-info="" title="russian blue">
+                <img src="" alt="savannah" data-info="" title="savannah">
+                <img src="" alt="scottish fold" data-info="" title="scottish fold">
+                <img src="" alt="selkrik rex" data-info="" title="selkrik rex">
+                <img src="" alt="serengeti" data-info="" title="serengeti">
+                <img src="" alt="siamese" data-info="" title="siamese">
+                <img src="" alt="sibirian" data-info="" title="sibirian">
+                <img src="" alt="singabura" data-info="" title="singabura">
+                <img src="" alt="snowhoe" data-info="" title="snowhoe">
+                <img src="" alt="sokoke" data-info="" title="sokoke">
+                <img src="" alt="somali" data-info="" title="somali">
+                <img src="bilder/pixel-cat3.png" alt="Sphynx" data-info="" title="Sphynx">
+                <img src="" alt="tonkinese" data-info="" title="tonkinese">
+                <img src="" alt="toyger" data-info="" title="toyger">
+                <img src="" alt="turkish angora" data-info="" title="turkish angora">
+                <img src="" alt="turkish van" data-info="" title="turkish van">
             </div>
             <div id="cat-info"></div>
         </section>
-       
+        
         <section id="chat">
             <div class="chat-box">
                 <div id="messages"></div>
                 <form id="chat-form">
-                    <input type="text" id="chat-input" placeholder="Skriv ett meddelande..." required>
-                    <button type="submit">Skicka</button>
+                    <input type="text" id="chat-input" placeholder="type a message...." required>
+                    <button type="submit">send</button>
                 </form>
             </div>
         </section>
