@@ -23,6 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const info = e.target.getAttribute('data-info');
             catInfo.textContent = info;
             catInfo.style.display = 'block';
+            catInfo.style.width = '80%'; // Ensure it spans the full width
+            catInfo.style.whiteSpace = 'nowrap'; // Keep it in a straight line
+            catInfo.style.position = 'fixed'; // Fix it at the bottom
+            catInfo.style.bottom = '10px'; // Keep some spacing from the bottom
+            catInfo.style.left = '0'; // Align to the left
+            catInfo.style.backgroundColor = 'white'; // Background for visibility
+            catInfo.style.border = '1px solid #ccc';
+            catInfo.style.zIndex = '1000'; // Keep it above other elements
+            catInfo.style.textAlign = 'center';
         }
     });
 
