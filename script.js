@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const chatForm = document.getElementById('chat-form');
-    const chatInput = document.getElementById('chat-input');
-    const messages = document.getElementById('messages');
-
-    chatForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const message = chatInput.value.trim();
-        if (message) {
-            const newMessage = document.createElement('div');
-            newMessage.textContent = `Du: ${message}`;
-            messages.appendChild(newMessage);
-            chatInput.value = '';
-            messages.scrollTop = messages.scrollHeight;
-        }
-    });
-
     const gallery = document.querySelector('.gallery');
     const catInfo = document.getElementById('cat-info');
 
@@ -24,10 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
             catInfo.textContent = info;
             catInfo.style.display = 'block';
             catInfo.style.width = '80%'; // Ensure it spans the full width
-            catInfo.style.whiteSpace = 'nowrap'; // Keep it in a straight line
             catInfo.style.position = 'fixed'; // Fix it at the bottom
             catInfo.style.bottom = '10px'; // Keep some spacing from the bottom
-            catInfo.style.left = '0'; // Align to the left
+            catInfo.style.left = '1'; // Center it horizontally
             catInfo.style.backgroundColor = 'white'; // Background for visibility
             catInfo.style.border = '1px solid #ccc';
             catInfo.style.zIndex = '1000'; // Keep it above other elements
